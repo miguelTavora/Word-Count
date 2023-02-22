@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<configuration>
+
+	<property>
+		<name>wordcount.case.sensitive</name>
+		
+		<value>true</value>
+		<!-- <value>false</value> -->
+		<description>Defines if must have upper-case or not</description>
+	</property>
+	
+	<property>
+		<name>wordcount.ngrams</name>
+		
+		<value>5</value>
+		<!-- <value>2</value> -->
+		<!-- <value>3</value> -->
+		<!-- <value>4</value> -->
+		<description>Number of n-grams used</description>
+	</property>
+	
+	<property>
+		<name>wordcount.skip.patterns</name>
+		<value>true</value>
+	</property>
+
+</configuration>

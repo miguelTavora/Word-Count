@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<configuration>
+
+
+	<property>
+		<name>mapreduce.output.fileoutputformat.compress.codec</name>
+		<!-- <value>org.apache.hadoop.io.compress.DefaultCodec</value> -->
+		<!--<value>org.apache.hadoop.io.compress.GzipCodec</value>-->
+		<value>org.apache.hadoop.io.compress.BZip2Codec</value>
+		<!-- <value>org.apache.hadoop.io.compress.BZip2Codec</value> -->
+		<!-- <value>org.apache.hadoop.io.compress.Lz4Codec</value> -->
+		<!-- <value>org.apache.hadoop.io.compress.SnappyCodec</value> -->
+		
+		<description>Type of compression codec for outputs</description>
+	</property>
+
+	
+	<property>
+		<name>mapreduce.job.reduces</name>
+		<value>1</value>
+		<description>Number of processes that produce a set of output key-value pairs</description>
+	</property>
+	
+	
+	<property>
+		<name>mapreduce.output.fileoutputformat.compress</name>
+		<value>false</value>
+		<description>Define if he would use compression on the output or not</description>
+	</property>
+	
+	
+
+</configuration>
